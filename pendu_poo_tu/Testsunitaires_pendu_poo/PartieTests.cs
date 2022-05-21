@@ -13,7 +13,6 @@ namespace Testsunitaires_pendu_poo
     public class PartieTests
     {
         [Fact]
-
         public void commencerPartie ()
         {
             Mot motChat = new Mot("chat");
