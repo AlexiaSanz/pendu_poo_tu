@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pendu_poo_tu
 {
-    public class Partie 
+    public class Partie
     {
         private Mot _mot;
         public int ViesRestantes { get; private set; }
@@ -14,28 +14,27 @@ namespace pendu_poo_tu
 
 
 
-        public Partie (Mot mot)
+        public Partie(Mot mot)
         {
             this._mot = mot;
             ViesRestantes = 6;
-            LettresJouees = new List<char> ();
+            LettresJouees = new List<char>();
         }
 
-        public void Jouer (char Lettre)
+        public void Jouer(char Lettre)
         {
-            if (!LettresJouees.Contains (Lettre))
-            {
-                this.LettresJouees.Add(Lettre);
-
-                if (!this._mot.Contient(Lettre))
-                {
-                    this.ViesRestantes--;
-                }
-            }
-            else
+            if (LettresJouees.Contains(Lettre))
             {
                 return;
             }
+
+            this.LettresJouees.Add(Lettre);
+
+            if (!this._mot.Contient(Lettre))
+            {
+                this.ViesRestantes--;
+            }
+
         }
     }
 }
