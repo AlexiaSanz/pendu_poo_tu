@@ -16,5 +16,11 @@ namespace pendu_poo_tu
             this._mot = mot;
             ViesRestantes = 6;
         }
+
+        public void Jouer (char Lettre)
+        {
+
+        }
+
     }
 }
