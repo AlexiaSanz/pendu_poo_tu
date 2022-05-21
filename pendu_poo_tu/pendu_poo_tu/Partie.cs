@@ -10,15 +10,20 @@ namespace pendu_poo_tu
     {
         private Mot _mot;
         public int ViesRestantes { get; private set; }
+        public List<char> LettresJouees { get; private init; }
+
+
 
         public Partie (Mot mot)
         {
             this._mot = mot;
             ViesRestantes = 6;
+            LettresJouees = new List<char> ();
         }
 
         public void Jouer (char Lettre)
         {
+            this.LettresJouees.Add (Lettre);
             if (!this._mot.Contient(Lettre))
             {
                 this.ViesRestantes--;

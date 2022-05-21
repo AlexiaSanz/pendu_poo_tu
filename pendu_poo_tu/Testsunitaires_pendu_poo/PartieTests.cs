@@ -50,8 +50,8 @@ namespace Testsunitaires_pendu_poo
             partie.Jouer('a');
             partie.Jouer('b');
             partie.LettresJouees.Should().HaveCount(2);
-            partie.LettresJouees.Should().Contains('a');
-            partie.LettresJouees.Should().Contains('b');
+            partie.LettresJouees.Should().Contain('a');
+            partie.LettresJouees.Should().Contain('b');
         }
     }
 }
