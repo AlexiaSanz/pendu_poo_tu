@@ -30,5 +30,15 @@ namespace Testsunitaires_pendu_poo
             partie.Jouer('c');
             partie.ViesRestantes.Should().Be(6);
         }
+
+        [Fact]
+        public void MauvaiseLettre ()
+        {
+            Mot motChat = new Mot("chat");
+
+            Partie partie = new Partie (motChat);
+            partie.Jouer('b');
+            partie.ViesRestantes.Should().Be(5);
+        }
     }
 }
