@@ -19,8 +19,10 @@ namespace pendu_poo_tu
 
         public void Jouer (char Lettre)
         {
-
+            if (!this._mot.Contient(Lettre))
+            {
+                this.ViesRestantes--;
+            }
         }
-
     }
 }
