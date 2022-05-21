@@ -23,10 +23,18 @@ namespace pendu_poo_tu
 
         public void Jouer (char Lettre)
         {
-            this.LettresJouees.Add (Lettre);
-            if (!this._mot.Contient(Lettre))
+            if (!LettresJouees.Contains (Lettre))
             {
-                this.ViesRestantes--;
+                this.LettresJouees.Add(Lettre);
+
+                if (!this._mot.Contient(Lettre))
+                {
+                    this.ViesRestantes--;
+                }
+            }
+            else
+            {
+                return;
             }
         }
     }
