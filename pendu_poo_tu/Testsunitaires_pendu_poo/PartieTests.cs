@@ -53,5 +53,20 @@ namespace Testsunitaires_pendu_poo
             partie.LettresJouees.Should().Contain('a');
             partie.LettresJouees.Should().Contain('b');
         }
+
+        [Fact]
+        public void MauvaiseLettreDejaJouee ()
+        {
+            Partie partie = new PartieBuilder().AvecMot("chat").Build();
+            partie.Jouer('a');
+            partie.Jouer ('b');
+            partie.ViesRestantes.Should().Be(5);
+            partie.Jouer ('b');
+            partie.ViesRestantes.Should().Be(5);
+
+            partie.LettresJouees.Should().HaveCount(2);
+            partie.LettresJouees.Should().Contain('a');
+            partie.LettresJouees.Should().Contain('b');
+        }
     }
 }
