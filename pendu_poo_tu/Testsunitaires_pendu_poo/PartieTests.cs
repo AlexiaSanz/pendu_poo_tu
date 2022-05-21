@@ -13,11 +13,21 @@ namespace Testsunitaires_pendu_poo
     public class PartieTests
     {
         [Fact]
-        public void commencerPartie ()
+        public void CommencerPartie ()
         {
             Mot motChat = new Mot("chat");
 
             Partie partie = new Partie(motChat);
+            partie.ViesRestantes.Should().Be(6);
+        }
+
+        [Fact]
+        public void BonneLettre ()
+        {
+            Mot motChat = new Mot("chat");
+
+            Partie partie = new Partie(motChat);
+            partie.Jouer('c');
             partie.ViesRestantes.Should().Be(6);
         }
     }
