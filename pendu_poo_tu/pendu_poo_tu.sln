@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pendu_poo_tu", "pendu_poo_tu\pendu_poo_tu.csproj", "{38D8BEA1-06BF-4FD9-99DC-083F252173B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testsunitaires_pendu_poo", "Testsunitaires_pendu_poo\Testsunitaires_pendu_poo.csproj", "{EA6D9A4F-821D-451A-AA2E-23B080228D25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{38D8BEA1-06BF-4FD9-99DC-083F252173B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38D8BEA1-06BF-4FD9-99DC-083F252173B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38D8BEA1-06BF-4FD9-99DC-083F252173B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6D9A4F-821D-451A-AA2E-23B080228D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6D9A4F-821D-451A-AA2E-23B080228D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6D9A4F-821D-451A-AA2E-23B080228D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6D9A4F-821D-451A-AA2E-23B080228D25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
