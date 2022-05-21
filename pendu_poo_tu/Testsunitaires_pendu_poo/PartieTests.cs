@@ -42,7 +42,7 @@ namespace Testsunitaires_pendu_poo
         }
 
         [Fact]
-        public void LettreDejaJouee ()
+        public void LettreJouee ()
         {
             Mot motChat = new Mot("chat");
 
