@@ -80,5 +80,22 @@ namespace Testsunitaires_pendu_poo
 
             partie.Gagnee.Should().BeTrue();
         }
+
+        [Fact]
+        public void Perdu ()
+        {
+            Partie partie = new PartieBuilder().AvecMot("chat").Build();
+            partie.Jouer('d');
+            partie.Jouer('b');
+            partie.Jouer('p');
+            partie.Jouer('e');
+            partie.Jouer('g');
+            partie.Jouer('k');
+
+            partie.ViesRestantes.Should().Be(0);
+
+            partie.Perdu.Should().BeTrue();
+            
+        }
     }
 }
