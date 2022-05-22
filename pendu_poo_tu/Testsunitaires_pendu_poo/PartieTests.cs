@@ -95,7 +95,17 @@ namespace Testsunitaires_pendu_poo
             partie.ViesRestantes.Should().Be(0);
 
             partie.Perdu.Should().BeTrue();
-            
+        }
+
+        [Fact]
+        public void Evolution ()
+        {
+            Partie partie = new PartieBuilder().AvecMot("chat").Build();
+            partie.Jouer('c');
+            partie.Jouer('a');
+            partie.Jouer('p');
+
+            partie.EvolutionMot.Should().Be("c_a_");
         }
     }
 }
