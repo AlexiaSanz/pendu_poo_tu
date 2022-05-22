@@ -68,5 +68,20 @@ namespace Testsunitaires_pendu_poo
             partie.LettresJouees.Should().Contain('a');
             partie.LettresJouees.Should().Contain('b');
         }
+
+        [Fact]
+        public void ToutesLettresTrouvees ()
+        {
+            Partie partie = new PartieBuilder().AvecMot("chat").Build ();
+            partie.Jouer('c');
+            partie.Jouer('h');
+            partie.Jouer('a');
+            partie.Jouer('t');
+
+            partie.Gagnee.Should().BeTrue();
+
+
+
+        }
     }
 }

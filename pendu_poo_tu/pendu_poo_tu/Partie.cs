@@ -12,8 +12,6 @@ namespace pendu_poo_tu
         public int ViesRestantes { get; private set; }
         public List<char> LettresJouees { get; private init; }
 
-
-
         public Partie(Mot mot)
         {
             this._mot = mot;
@@ -34,7 +32,6 @@ namespace pendu_poo_tu
             {
                 this.ViesRestantes--;
             }
-
         }
     }
 }
