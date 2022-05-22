@@ -18,6 +18,13 @@ namespace pendu_poo_tu
                 return this._mot.CompletAvec(LettresJouees); 
             }
         }
+        public bool Perdu
+        {
+            get
+            {
+                return (this.ViesRestantes == 0);
+            }
+        }
         public Partie(Mot mot)
         {
             this._mot = mot;
