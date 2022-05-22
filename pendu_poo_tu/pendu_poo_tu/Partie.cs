@@ -11,7 +11,7 @@ namespace pendu_poo_tu
         private Mot _mot;
         public int ViesRestantes { get; private set; }
         public List<char> LettresJouees { get; private init; }
-
+        public bool Gagnee { get; private set; }
         public Partie(Mot mot)
         {
             this._mot = mot;
@@ -31,6 +31,11 @@ namespace pendu_poo_tu
             if (!this._mot.Contient(Lettre))
             {
                 this.ViesRestantes--;
+            }
+
+            if (this._mot.CompletAvec(LettresJouees))
+            {
+                Gagnee = true;
             }
         }
     }

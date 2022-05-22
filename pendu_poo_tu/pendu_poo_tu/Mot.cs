@@ -19,5 +19,15 @@ namespace pendu_poo_tu
         {
             return this._mot.Contains(lettre);
         }
+
+        public bool CompletAvec (List <char> lettresJouees)
+        {
+            foreach (char lettre in this._mot)
+            {
+                if (!lettresJouees.Contains(lettre))
+                    return false;
+            }
+            return true;
+        }
     }
 }

@@ -79,9 +79,6 @@ namespace Testsunitaires_pendu_poo
             partie.Jouer('t');
 
             partie.Gagnee.Should().BeTrue();
-
-
-
         }
     }
 }
