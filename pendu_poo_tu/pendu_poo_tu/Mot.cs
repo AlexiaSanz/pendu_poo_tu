@@ -20,7 +20,24 @@ namespace pendu_poo_tu
             return this._mot.Contains(lettre);
         }
 
-        public bool CompletAvec (List <char> lettresJouees)
+        public string EvolutionMot(List<char> lettresJouees)
+        {
+            char[] evolution = new char[this._mot.Length];
+            for (int i = 0; i < this._mot.Length; i++)
+            {
+              if (lettresJouees.Contains(this._mot[i]))
+                {
+                    evolution[i] = this._mot[i];
+                }
+              else
+                {
+                    evolution[i] = '_';
+                }
+            }
+            return new string(evolution);
+        }
+
+        public bool CompletAvec (List<char> lettresJouees)
         {
             foreach (char lettre in this._mot)
             {

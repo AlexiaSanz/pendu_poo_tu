@@ -25,6 +25,13 @@ namespace pendu_poo_tu
                 return (this.ViesRestantes == 0);
             }
         }
+        public string EvolutionMot
+        {
+            get
+            {
+                return this._mot.EvolutionMot(this.LettresJouees);
+            }
+        }
         public Partie(Mot mot)
         {
             this._mot = mot;
