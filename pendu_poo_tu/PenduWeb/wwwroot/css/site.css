@@ -1,18 +1,49 @@
-html {
-  font-size: 14px;
-}
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 3em;
+        
+        background-size: 50%;
+        background-position-y: 20%;
+    }
+
+    body {
+    }
 }
 
 html {
   position: relative;
   min-height: 100%;
+  font-size: 0.5em;
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: antiquewhite;
 }
+
+h1 {
+    color: white;
+    padding-top: 6em;
+    font-family: school;
+    text-align: center;
+    padding-bottom:40%;
+    font-size: 1em;
+    
+    
+    
+    background-image: url("../img/tableau_noir.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position-x: center;
+    background-position-y: 20%;
+}
+
+
+
+
+@font-face{
+    font-family: "school";
+    src : url("../polices/Schoolbell-Regular.ttf") format('truetype');
+}
+
